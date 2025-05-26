@@ -1,0 +1,292 @@
+/* assets/custom.css */
+body {
+    background-color: #1E2A38; /* Primary Background: Deep charcoal grey */
+    color: #EAECEE; /* Text & Icons: Primarily off-white */
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #EAECEE;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Links */
+a {
+    color: #00C49F; /* Primary Accent */
+    text-decoration: none;
+}
+a:hover {
+    color: #3498DB; /* Secondary Accent */
+    text-decoration: underline;
+}
+
+/* Header */
+.header-bar {
+    background-color: #1c2836; /* Slightly darker than main bg for depth */
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid #34495E; /* Neutral Grey for border */
+    color: #EAECEE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Bootstrap's default for fixed navbar */
+    height: 60px; /* Fixed height */
+    display: flex;
+    align-items: center;
+}
+.header-bar .app-title {
+    margin: 0;
+    font-size: 1.75rem; /* H1 equivalent */
+    font-weight: 700; /* Inter Bold */
+    color: #EAECEE;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #273746; /* Lighter grey than main background */
+    padding: 20px;
+    height: calc(100vh - 60px); /* Full height minus header */
+    position: fixed;
+    top: 60px; /* Below header */
+    left: 0;
+    width: 280px; /* Sidebar width */
+    overflow-y: auto;
+    border-right: 1px solid #34495E;
+    z-index: 1020;
+}
+.sidebar .label {
+    color: #EAECEE;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 280px; /* Same as sidebar width */
+    padding: 20px;
+    padding-top: 80px; /* Header height + some padding */
+    width: calc(100% - 280px);
+    background-color: #1E2A38;
+    min-height: calc(100vh - 60px);
+}
+
+/* Cards */
+.custom-card {
+    background-color: #2c3e50; /* Darker Neutral Grey for card backgrounds */
+    border: 1px solid #34495E; /* Neutral Grey for border */
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.custom-card .card-title {
+    color: #EAECEE;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem; /* H3 equivalent */
+    font-weight: 600; /* Inter SemiBold */
+    margin-bottom: 15px;
+}
+
+/* Dropdown styling for Dash Core Components */
+/* Targeting dcc.Dropdown specifically */
+#consignor-dropdown .Select-control, 
+#consignor-dropdown .Select-menu-outer,
+#consignor-dropdown .Select-value-label, 
+#consignor-dropdown .Select-placeholder {
+    background-color: #34495E !important;
+    color: #EAECEE !important;
+    border: 1px solid #566573 !important;
+    font-family: 'Inter', sans-serif;
+}
+#consignor-dropdown .Select--single > .Select-control .Select-value, 
+#consignor-dropdown .Select-placeholder {
+    color: #EAECEE !important;
+}
+#consignor-dropdown .Select-input input {
+    color: #EAECEE !important;
+}
+#consignor-dropdown .VirtualizedSelectOption {
+    background-color: #34495E !important;
+    color: #EAECEE !important;
+    font-family: 'Inter', sans-serif;
+}
+#consignor-dropdown .VirtualizedSelectFocusedOption {
+    background-color: #00C49F !important; /* Primary Accent for focused option */
+    color: #1E2A38 !important;
+}
+#consignor-dropdown .Select-arrow {
+    border-top-color: #EAECEE !important;
+}
+
+
+/* Table Styling for dash_table.DataTable */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table {
+    background-color: #2c3e50; /* Card background */
+    color: #EAECEE;
+    font-family: 'Inter', sans-serif;
+    border-collapse: separate; /* Allows for border-radius on cells if needed */
+    border-spacing: 0;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+    background-color: #34495E; /* Slightly lighter than card for header */
+    color: #EAECEE;
+    font-weight: 600; /* Inter SemiBold */
+    border: 1px solid #566573;
+    padding: 12px 15px;
+    font-size: 0.9rem;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+    border: 1px solid #566573;
+    padding: 10px 15px;
+    font-size: 0.85rem;
+    min-width: 100px;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tr:nth-child(even) td {
+    background-color: #304254; /* Subtle striping */
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tr:hover td {
+    background-color: #00C49F; /* Primary Accent on hover */
+    color: #1E2A38;
+}
+
+/* Plotly Graph Styling */
+/* This ensures the graph background within the card matches the card's theme */
+.js-plotly-plot .plotly .main-svg {
+    background-color: rgba(0,0,0,0) !important; /* Transparent to inherit card bg */
+}
+.js-plotly-plot .plotly .main-svg .bg {
+    fill: rgba(0,0,0,0) !important; /* Transparent */
+}
+.js-plotly-plot .plotly .main-svg text {
+    fill: #EAECEE !important;
+    font-family: 'Inter', sans-serif !important;
+}
+.js-plotly-plot .plotly .main-svg .g-xtick text, 
+.js-plotly-plot .plotly .main-svg .g-ytick text {
+    fill: #BDC3C7 !important; /* Lighter grey for tick labels */
+    font-size: 0.8rem !important;
+}
+.js-plotly-plot .plotly .main-svg .g-title text {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important; /* Inter SemiBold */
+}
+.js-plotly-plot .plotly .main-svg .xaxislayer-above .gridlayer .grid path,
+.js-plotly-plot .plotly .main-svg .yaxislayer-above .gridlayer .grid path {
+    stroke: #34495E !important; /* Grid line color */
+    stroke-opacity: 0.7;
+}
+.js-plotly-plot .plotly .main-svg .zerolinelayer .zeroline {
+    stroke: #566573 !important; /* Zero line color */
+}
+.js-plotly-plot .plotly .main-svg .legendtext {
+    fill: #EAECEE !important;
+    font-family: 'Inter', sans-serif !important;
+}
+.js-plotly-plot .plotly .main-svg .legend .bg {
+    fill: #273746 !important; /* Legend background */
+    stroke: #34495E;
+    stroke-width: 1px;
+}
+
+
+/* Methodology & Disclaimer Sections */
+.methodology-section {
+    background-color: #2c3e50; /* Card background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    color: #EAECEE;
+    border: 1px solid #34495E;
+}
+.methodology-section h4 {
+    color: #EAECEE;
+    font-weight: 600; /* Inter SemiBold */
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+.methodology-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.methodology-section ul li {
+    color: #BDC3C7; /* Lighter grey for list items */
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.disclaimer-text {
+    color: #F39C12 !important; /* Muted amber for disclaimer */
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-weight: 500; /* Inter Medium */
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(243, 156, 18, 0.1); /* Slight amber background */
+    border: 1px solid #F39C12;
+    border-radius: 4px;
+}
+
+/* KPI Card Specifics (Placeholder for now) */
+.kpi-card-container {
+    display: flex;
+    justify-content: space-around; /* Or space-between */
+    margin-bottom: 20px;
+}
+.kpi-card {
+    background-color: #2c3e50; /* Card background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #34495E;
+    flex: 1; /* Distribute space equally */
+    margin: 0 10px; /* Spacing between cards */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.kpi-card:first-child { margin-left: 0; }
+.kpi-card:last-child { margin-right: 0; }
+
+.kpi-card h3 { /* KPI Title */
+    font-size: 0.9rem;
+    color: #BDC3C7; /* Lighter grey for title */
+    margin-bottom: 8px;
+    font-weight: 400; /* Inter Regular */
+    text-transform: uppercase;
+}
+.kpi-card .kpi-value { /* KPI Value */
+    font-size: 2.5rem; /* Large font for KPI number */
+    color: #EAECEE;
+    font-weight: 300; /* Inter Light */
+    margin: 0;
+    line-height: 1.2;
+}
+.kpi-card .kpi-icon { /* Placeholder for icon */
+    font-size: 1.5rem;
+    color: #00C49F; /* Primary Accent */
+    margin-bottom: 10px;
+}
+
+/* Ensure Plotly graph tooltip also follows the theme */
+.plotly-tooltip {
+    background-color: #1E2A38 !important;
+    color: #EAECEE !important;
+    border: 1px solid #00C49F !important;
+    font-family: 'Inter', sans-serif !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+}
+
+/* General Dash component overrides if needed */
+.Select, .DateInput_input, .DateRangePickerInput_calendarIcon {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Fix for main content potentially being overlapped by fixed sidebar/header */
+html {
+    overflow-y: scroll; /* Always show scrollbar to prevent layout shifts */
+}
