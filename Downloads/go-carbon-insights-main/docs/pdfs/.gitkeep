@@ -1,0 +1,18 @@
+
+# PDF Documentation Directory
+
+Generated PDF versions of the project knowledge base.
+
+## Current Versions
+- v1.0.0 - Initial comprehensive documentation
+
+## Archive Policy
+- Keep latest 3 versions in main directory
+- Move older versions to archive/ subdirectory
+- Include generation timestamp in file metadata
+
+## Naming Convention
+project-knowledge-v{major}.{minor}.{patch}.pdf
+
+## Manual Generation
+Currently using manual PDF generation. See ../scripts/pdf-generator.md for instructions.

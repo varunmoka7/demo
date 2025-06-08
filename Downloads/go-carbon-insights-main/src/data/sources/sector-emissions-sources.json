@@ -1,0 +1,85 @@
+
+{
+  "source_attribution": {
+    "primary_source": "IPCC AR6 Working Group III",
+    "chapter": "Chapter 7: Demand, services and social aspects",
+    "url": "https://www.ipcc.ch/report/ar6/wg3/",
+    "title": "Global greenhouse gas emissions by economic sector",
+    "data_year": "2019",
+    "methodology": "Comprehensive analysis of global emissions by economic sector using EDGAR and other databases",
+    "license": "Open access - IPCC reports available for unrestricted use"
+  },
+  "sectors": [
+    {
+      "sector": "Energy & Electricity",
+      "percentage": 25,
+      "absolute": "14.5 GtCO₂eq",
+      "subcategories": [
+        {"name": "Fossil fuel electricity", "value": "10.9 GtCO₂eq", "percentage": 75},
+        {"name": "Heat generation", "value": "2.8 GtCO₂eq", "percentage": 19},
+        {"name": "Other energy", "value": "0.8 GtCO₂eq", "percentage": 6}
+      ],
+      "color": "#dc2626"
+    },
+    {
+      "sector": "Industry & Manufacturing", 
+      "percentage": 21,
+      "absolute": "12.2 GtCO₂eq",
+      "subcategories": [
+        {"name": "Steel production", "value": "3.0 GtCO₂eq", "percentage": 25},
+        {"name": "Cement production", "value": "2.4 GtCO₂eq", "percentage": 20},
+        {"name": "Chemicals", "value": "2.2 GtCO₂eq", "percentage": 18},
+        {"name": "Other manufacturing", "value": "4.6 GtCO₂eq", "percentage": 37}
+      ],
+      "color": "#ea580c"
+    },
+    {
+      "sector": "Agriculture & Land Use",
+      "percentage": 18,
+      "absolute": "10.4 GtCO₂eq",
+      "subcategories": [
+        {"name": "Livestock", "value": "4.2 GtCO₂eq", "percentage": 40},
+        {"name": "Crop production", "value": "2.8 GtCO₂eq", "percentage": 27},
+        {"name": "Land use change", "value": "2.3 GtCO₂eq", "percentage": 22},
+        {"name": "Forestry", "value": "1.1 GtCO₂eq", "percentage": 11}
+      ],
+      "color": "#84cc16"
+    },
+    {
+      "sector": "Transportation",
+      "percentage": 16, 
+      "absolute": "9.3 GtCO₂eq",
+      "subcategories": [
+        {"name": "Road transport", "value": "6.2 GtCO₂eq", "percentage": 67},
+        {"name": "Aviation", "value": "1.4 GtCO₂eq", "percentage": 15},
+        {"name": "Shipping", "value": "1.2 GtCO₂eq", "percentage": 13},
+        {"name": "Rail transport", "value": "0.5 GtCO₂eq", "percentage": 5}
+      ],
+      "color": "#f59e0b"
+    },
+    {
+      "sector": "Buildings",
+      "percentage": 12,
+      "absolute": "7.0 GtCO₂eq",
+      "subcategories": [
+        {"name": "Residential heating", "value": "2.8 GtCO₂eq", "percentage": 40},
+        {"name": "Commercial buildings", "value": "2.1 GtCO₂eq", "percentage": 30},
+        {"name": "Cooling systems", "value": "1.4 GtCO₂eq", "percentage": 20},
+        {"name": "Lighting & appliances", "value": "0.7 GtCO₂eq", "percentage": 10}
+      ],
+      "color": "#22c55e"
+    },
+    {
+      "sector": "Other Energy Uses",
+      "percentage": 8,
+      "absolute": "4.6 GtCO₂eq",
+      "subcategories": [
+        {"name": "Fugitive emissions", "value": "2.1 GtCO₂eq", "percentage": 46},
+        {"name": "Other combustion", "value": "1.4 GtCO₂eq", "percentage": 30},
+        {"name": "Energy losses", "value": "0.8 GtCO₂eq", "percentage": 17},
+        {"name": "Waste management", "value": "0.3 GtCO₂eq", "percentage": 7}
+      ],
+      "color": "#10b981"
+    }
+  ]
+}

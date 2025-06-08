@@ -1,0 +1,183 @@
+{
+  "$schema": "https://fundingjson.org/schema/funding.schema.json",
+  "version": "v1",
+  "entity": {
+    "type": "individual",
+    "role": "maintainer",
+    "name": "Varun Moka",
+    "email": "moka@gocarbontracker.com",
+    "phone": "",
+    "description": "Open source developer and sustainability advocate building carbon emissions tracking solutions for global supply chain transparency and decarbonization.",
+    "webpageUrl": {
+      "url": "https://gocarbontracker.net",
+      "wellKnown": "/.well-known/funding-manifest-urls"
+    }
+  },
+  "project": {
+    "name": "GoCarbonTracker",
+    "description": "Premium B2B consulting services (Scope 3 emissions, LCA, double materiality assessments, decarbonization strategies) fund a completely free educational platform, creating a sustainable bridge between professional sustainability and public climate education",
+    "webpageUrl": {
+      "url": "https://gocarbontracker.com",
+      "wellKnown": ""
+    },
+    "repositoryUrl": {
+      "url": "https://github.com/gocarbontracker/platform",
+      "wellKnown": ""
+    },
+    "license": "MIT"
+  },
+  "funding": {
+    "amount": {
+      "currency": "EUR",
+      "min": 100000,
+      "target": 125000,
+      "max": 150000
+    },
+    "duration": {
+      "months": 9
+    },
+    "description": "Transform sustainability consulting through specialized expertise while democratizing climate education through business excellence - where professional consulting success directly enables free access to enterprise-grade sustainability tools and curriculum for all",
+    "useOfFunds": [
+      {
+        "category": "Development",
+        "percentage": 60,
+        "description": "Advanced Scope 3 tracking, LCA frameworks, double materiality assessments, CSRD compliance, enterprise consulting workflows"
+      },
+      {
+        "category": "Educational Platform",
+        "percentage": 28,
+        "description": "Free educational modules, teacher dashboards, mobile learning app, multilingual content, community forums"
+      },
+      {
+        "category": "Operations & Growth", 
+        "percentage": 12,
+        "description": "Infrastructure, team expansion, consulting expertise, client relationship management"
+      }
+    ],
+    "milestones": [
+      {
+        "phase": 1,
+        "fundingTarget": 30000,
+        "title": "Foundation & Scope 3 Specialization",
+        "deliverables": [
+          "Advanced Scope 3 emissions tracking and calculation engines",
+          "LCA framework integration and automated reporting",
+          "Enterprise-grade data validation and audit trails",
+          "Educational platform foundation with free access tier"
+        ],
+        "timeline": "2 months"
+      },
+      {
+        "phase": 2,
+        "fundingTarget": 60000,
+        "title": "Advanced Analytics & Double Materiality",
+        "deliverables": [
+          "Double materiality assessment framework and automation",
+          "AI-powered supply chain emissions hotspot identification",
+          "CSRD-compliant reporting with professional audit support",
+          "Real business case studies integrated into educational curriculum"
+        ],
+        "timeline": "4 months"
+      },
+      {
+        "phase": 3,
+        "fundingTarget": 85000,
+        "title": "Enterprise Scale & Consulting Workflow",
+        "deliverables": [
+          "Multi-client consulting workflow management system",
+          "White-label solutions for sustainability consulting firms",
+          "Advanced LCA automation reducing delivery time by 70%",
+          "Teacher dashboard with student progress tracking"
+        ],
+        "timeline": "6 months"
+      },
+      {
+        "phase": 4,
+        "fundingTarget": 125000,
+        "title": "Educational Excellence & Community",
+        "deliverables": [
+          "Comprehensive age-appropriate educational modules",
+          "Multilingual content (German, English, French, Spanish)",
+          "Mobile-optimized learning app for accessibility",
+          "Community forums connecting students with professionals"
+        ],
+        "timeline": "9 months"
+      }
+    ],
+    "revenueModel": {
+      "strategy": "High-value consulting engagements (€2K-25K per project) targeting European companies' complex sustainability challenges, with consulting margins funding free educational access for schools, students, and the general public",
+      "targetRevenue": "€25K MRR by month 6 through specialized consulting services",
+      "consultingServices": [
+        "Scope 3 emissions assessments (€8K-15K per engagement)",
+        "Life Cycle Assessments (€5K-25K per project)",
+        "Double materiality assessments (€3K-12K per engagement)",
+        "Decarbonization strategy development (€10K-20K per project)"
+      ],
+      "sustainability": "Premium consulting revenue funds completely free educational platform access"
+    },
+    "impact": {
+      "businessImpact": {
+        "consultingRevenue": "€25K MRR",
+        "scope3Assessments": 30,
+        "lcaReports": 20,
+        "companiesServed": 50,
+        "consultingValue": "€300K annual consulting revenue"
+      },
+      "educationalImpact": {
+        "studentsReached": 5000,
+        "schoolsParticipating": 100,
+        "publicUsers": 10000,
+        "freeAccess": "100% free educational content",
+        "accessibility": "Mobile-optimized for global reach"
+      },
+      "environmentalImpact": {
+        "emissionsAssessed": "5M tons CO2e annually",
+        "companiesDecarbonized": 50,
+        "studentsEducated": 5000,
+        "climateLiteracy": "Next-generation climate professionals"
+      }
+    }
+  },
+  "technical": {
+    "stack": ["React", "TypeScript", "Tailwind CSS", "Supabase", "Vite"],
+    "platforms": ["Web"],
+    "deployment": "Vercel/Netlify with Supabase backend",
+    "testing": "Jest, React Testing Library",
+    "cicd": "GitHub Actions"
+  },
+  "team": {
+    "founder": {
+      "name": "Varun Moka",
+      "role": "Founder & Lead Sustainability Consultant",
+      "expertise": "B2B consulting, platform development, sustainability strategy"
+    },
+    "plannedExpansion": [
+      "Educational content specialists and curriculum designers",
+      "Sustainability consulting experts for client delivery",
+      "Technical developers for platform advancement"
+    ]
+  },
+  "transparency": {
+    "progressTracking": "Monthly progress reports published on platform",
+    "fundAllocation": "Quarterly financial transparency reports with consulting revenue metrics",
+    "communityInvolvement": "Open roadmap with community voting on educational features",
+    "accountability": "Public milestone tracking with consulting project and educational impact verification"
+  },
+  "references": [
+    {
+      "name": "Platform Demo",
+      "url": "https://gocarbontracker.com/demo"
+    },
+    {
+      "name": "Educational Framework",
+      "url": "https://gocarbontracker.com/education"
+    }
+  ],
+  "contact": {
+    "founder": "Varun Moka",
+    "email": "moka@gocarbontracker.com",
+    "linkedin": "https://www.linkedin.com/in/varunmoka7"
+  },
+  "createdAt": "2024-06-04T00:00:00Z",
+  "updatedAt": "2024-06-04T00:00:00Z"
+}

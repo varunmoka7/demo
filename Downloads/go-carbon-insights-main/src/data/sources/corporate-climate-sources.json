@@ -1,0 +1,49 @@
+
+{
+  "source_attribution": {
+    "primary_source": "Science Based Targets initiative",
+    "url": "https://sciencebasedtargets.org/companies-taking-action",
+    "methodology": "Corporate climate action index based on SBTi commitments, reporting transparency, and sector participation",
+    "data_note": "Mock implementation based on real SBTi public data structure for demonstration purposes",
+    "last_updated": "2025-01-15",
+    "geographic_coverage": "14 countries: 10 European (Germany, UK, France, Netherlands, Sweden, Denmark, Switzerland, Norway, Finland, Italy, Spain) + USA, China, Japan",
+    "license": "SBTi data publicly available - implementation for educational purposes"
+  },
+  "countries": [
+    {
+      "name": "United States",
+      "sbti_companies": 234,
+      "reporting_quality": 78,
+      "top_sectors": ["Technology", "Financial Services", "Manufacturing"],
+      "annual_improvement": "+8%",
+      "total_tracked": 445,
+      "climate_leadership_score": 82,
+      "color": "#4ade80",
+      "sector_breakdown": {
+        "Technology": {"companies": 45, "avg_quality": 85, "sbti_targets": 38},
+        "Financial Services": {"companies": 38, "avg_quality": 82, "sbti_targets": 31},
+        "Manufacturing": {"companies": 52, "avg_quality": 71, "sbti_targets": 29}
+      }
+    },
+    {
+      "name": "United Kingdom",
+      "sbti_companies": 89,
+      "reporting_quality": 84,
+      "top_sectors": ["Financial Services", "Retail", "Energy"],
+      "annual_improvement": "+12%",
+      "total_tracked": 156,
+      "climate_leadership_score": 87,
+      "color": "#22c55e"
+    },
+    {
+      "name": "Denmark",
+      "sbti_companies": 29,
+      "reporting_quality": 90,
+      "top_sectors": ["Energy", "Pharmaceuticals", "Manufacturing"],
+      "annual_improvement": "+20%",
+      "total_tracked": 45,
+      "climate_leadership_score": 93,
+      "color": "#065f46"
+    }
+  ]
+}

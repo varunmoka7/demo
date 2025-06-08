@@ -1,0 +1,45 @@
+
+{
+  "atmospheric_co2": {
+    "value": 423.0,
+    "unit": "ppm", 
+    "source": {
+      "organization": "NOAA Mauna Loa Observatory",
+      "title": "Trends in Atmospheric Carbon Dioxide",
+      "url": "https://gml.noaa.gov/ccgg/trends/",
+      "methodology": "Direct atmospheric measurement using infrared gas analyzers at 3,397m elevation",
+      "update_frequency": "Monthly",
+      "last_updated": "2024-12",
+      "reliability": "Primary source - A+",
+      "license": "Public domain - US Government data",
+      "historical_context": "Highest level in over 3 million years"
+    }
+  },
+  "global_temperature_anomaly": {
+    "value": 1.1,
+    "unit": "°C above pre-industrial baseline",
+    "source": {
+      "organization": "NASA Goddard Institute for Space Studies", 
+      "title": "GISS Surface Temperature Analysis (GISTEMP v4)",
+      "url": "https://data.giss.nasa.gov/gistemp/",
+      "methodology": "Global surface temperature anomaly analysis using land and ocean data",
+      "baseline": "1951-1980 average temperature",
+      "last_updated": "2024",
+      "license": "Public domain - US Government data",
+      "peer_review": "Published in peer-reviewed journals"
+    }
+  },
+  "carbon_budget_remaining": {
+    "value": 400,
+    "unit": "GtCO₂",
+    "source": {
+      "organization": "Global Carbon Project",
+      "title": "Global Carbon Budget 2024",
+      "url": "https://www.globalcarbonproject.org/",
+      "methodology": "Remaining carbon budget for 50% chance of limiting warming to 1.5°C",
+      "uncertainty": "±200 GtCO₂",
+      "last_updated": "2024",
+      "license": "Creative Commons Attribution 4.0"
+    }
+  }
+}

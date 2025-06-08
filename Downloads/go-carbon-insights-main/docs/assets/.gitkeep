@@ -1,0 +1,19 @@
+
+# Assets Directory
+
+Store all documentation assets here:
+- Screenshots
+- Diagrams
+- Architecture images
+- UI mockups
+- Flowcharts
+
+## Naming Convention
+- Use kebab-case for file names
+- Include version or date when relevant
+- Organize by feature/section when needed
+
+Examples:
+- dashboard-overview-screenshot.png
+- system-architecture-diagram.svg
+- auth-flow-v1.0.0.png
